@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100&family=Source+Sans+3:ital,wght@1,500&display=swap');
+
+/*STYLE DE LA PARTIE FOOTER */
+
+
+footer {
+    background:#EFFAFF; 
+    display : flex ;
+	justify-content : space-around ;
+	align-items : center ;
+}
+
+footer div{
+    background:#EFFAFF; 
+}
+
+
+/* STYLE DE LA PARTIE HEADER */
+
+header {
+    background: #EFFAFF;
+}
+
+.logo {
+	position : center ;
+	heigth: 72px;
+	width:72px;
+}
+
+
+html {
+	background-color: #EFFAFF ;
+	padding : 2.5% ;
+}
+
+body {
+	background-color: #EFFAFF ;
+}
+
+h1,h2,h3 {
+    font-family: Lobster;
+    font-size: medium;
+    font-style: italic;
+    font-weight: bold;
+    color: #037682;
+}
+
+.para {
+  position: center;
+}
+
+.bb {
+    background: #EFFAFF; 
+}
+
+#pr {
+	font-size:larger;
+	
+}
+
+@media screen and (max-width:320px)
+@media screen and (max-width:800px)
+@media screen and (max-width:1024px)
+
+nav button a:hover{
+	text-decoration: none;
+}
