@@ -186,6 +186,14 @@
       position: absolute;
       inset: 0;
       background: linear-gradient(135deg, #E8E4DF 0%, #D4CFC9 100%);
+      overflow: hidden;
+    }
+
+    .avatar-bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
     }
 
     .avatar-accent {
@@ -543,12 +551,11 @@
     <div class="hero-text">
       <p class="hero-eyebrow">Consultante IA & Développeuse Logiciel</p>
       <h1 class="hero-name">Mariem<br/><em>Aloui</em></h1>
-      <p class="hero-title">Générative AI · LLMs · Multi-Agents · RAG · Software Engineering</p>
+      <p class="hero-title">Générative AI · LLMs · Agentic AI · RAG · MCP · Software Engineering</p>
       <p class="hero-desc">
         Consultante IA dynamique avec 3 ans d'expérience dont 2 ans et demi en IA,
-        spécialisée en IA générative, modèles de langage (LLMs) et systèmes IA basés
-        sur les graphes. Expertise en développement Python, architectures RAG, Graph-RAG,
-        streaming de données et solutions Cloud Azure.
+        spécialisée en IA générative, systèmes multi-agents et architectures RAG.
+        Expertise en développement Python, streaming de données et solutions Cloud Azure.
       </p>
       <div class="hero-cta">
         <a href="#contact" class="btn-primary">Me contacter</a>
@@ -557,13 +564,11 @@
     </div>
     <div class="hero-visual">
       <div class="avatar-frame">
-        <div class="avatar-bg"></div>
+        <div class="avatar-bg">
+          <img src="pdp.jpeg" alt="Mariem Aloui" />
+        </div>
         <div class="avatar-accent"></div>
         <div class="avatar-accent-2"></div>
-        <div class="avatar-initials">
-          <span class="initials-text">MA</span>
-          <span class="initials-label">Data × AI</span>
-        </div>
       </div>
     </div>
   </header>
@@ -580,17 +585,20 @@
           Consultante IA et développeuse logiciel avec 3 ans d'expérience dont 2 ans et demi
           dans le développement de solutions IA avancées et de pipelines de traitement de données.
           Spécialisée en IA générative, modèles de langage (LLMs) et systèmes IA basés sur les graphes.
+          Interventions dans des secteurs variés : audit, finance, marketing et gestion documentaire
+          (facturation, contrats).
         </p>
         <p>
           Ma passion : transformer des architectures LLM complexes — RAG, Graph-RAG, systèmes
-          multi-agents — en solutions concrètes et robustes. Je m'appuie sur des outils comme
-          Neo4j, LangGraph, Azure AI et Google ADK pour construire des pipelines intelligents
-          à haute valeur ajoutée.
+          multi-agents — en solutions concrètes et robustes. Je m'appuie sur des frameworks
+          agentiques comme LangGraph, Pydantic AI et Google ADK, avec des protocoles MCP et A2A
+          pour une interaction humaine-IA optimale (Human-in-the-Loop).
         </p>
         <p>
-          Expertise avérée en développement Python, streaming de données (Apache Kafka, Apache Spark),
+          Expertise avérée en développement Python, streaming de données (Apache Kafka, Apache Spark, Redis, Celery),
           architectures cloud Azure et mise en œuvre de solutions IA avancées incluant
-          Retrieval-Augmented Generation (RAG), Graphes de Connaissances et Agents Intelligents.
+          Retrieval-Augmented Generation (RAG), Graphes de Connaissances et évaluation d'agents
+          (RAGAS, LangChain AgentEvals).
         </p>
       </div>
       <div class="about-meta reveal">
@@ -623,14 +631,27 @@
     <div class="skills-grid reveal">
 
       <div class="skill-category">
-        <div class="skill-cat-name">IA Générative & LLMs</div>
+        <div class="skill-cat-name">Agentic AI & LLMs</div>
+        <ul class="skill-list">
+          <li>LangGraph / LangChain</li>
+          <li>Pydantic AI</li>
+          <li>Google ADK</li>
+          <li>MCP (Model Context Protocol)</li>
+          <li>A2A (Agent-to-Agent)</li>
+          <li>Human-in-the-Loop</li>
+        </ul>
+      </div>
+
+      <div class="skill-category">
+        <div class="skill-cat-name">RAG & Évaluation</div>
         <ul class="skill-list">
           <li>RAG & Graph-RAG</li>
+          <li>Multimodal RAG (Images & Tableaux)</li>
           <li>MetaGraphRag</li>
-          <li>LangChain / LangGraph</li>
           <li>Prompt Engineering</li>
-          <li>LLM Evaluation (RAGAS)</li>
-          <li>Agents IA & MCP</li>
+          <li>RAGAS</li>
+          <li>LangChain AgentEvals</li>
+          <li>BLEU / BERTScore</li>
         </ul>
       </div>
 
@@ -655,13 +676,14 @@
           <li>Apache Spark (Big Data)</li>
           <li>Hadoop</li>
           <li>CI/CD & Git</li>
+          <li>Power Platform / Dataverse</li>
         </ul>
       </div>
 
       <div class="skill-category">
         <div class="skill-cat-name">Bases de données</div>
         <ul class="skill-list">
-          <li>Neo4j (Graph DB)</li>
+          <li>Neo4j / Memgraph (Graph DB)</li>
           <li>PostgreSQL / MySQL</li>
           <li>MongoDB / Elasticsearch</li>
           <li>ChromaDB / pgvector</li>
@@ -670,14 +692,13 @@
       </div>
 
       <div class="skill-category">
-        <div class="skill-cat-name">Frameworks NLP</div>
+        <div class="skill-cat-name">NLP & Recherche</div>
         <ul class="skill-list">
           <li>Hugging Face</li>
-          <li>BLEU / BERTScore</li>
           <li>Embeddings vectoriels</li>
-          <li>Multimodal RAG</li>
           <li>LlamaIndex</li>
           <li>Recherche Sémantique</li>
+          <li>ColPali</li>
         </ul>
       </div>
 
@@ -685,11 +706,11 @@
         <div class="skill-cat-name">Leadership & Méthodes</div>
         <ul class="skill-list">
           <li>Tech Lead / Mentoring</li>
+          <li>Relation client & Étude de projet</li>
+          <li>Chiffrage & Cadrage technique</li>
+          <li>User Stories & Critères d'acceptance</li>
           <li>Code Review (PR-Agent)</li>
-          <li>Gestion de backlog</li>
-          <li>Scrum / Agile</li>
-          <li>Power Platform</li>
-          <li>Power BI / Dataverse</li>
+          <li>Gestion de backlog / Scrum</li>
         </ul>
       </div>
 
@@ -705,49 +726,38 @@
     <div class="exp-list">
 
       <div class="exp-item reveal">
-        <div class="exp-period">2024 →<br/>Présent</div>
+        <div class="exp-period">2023 →<br/>Présent</div>
         <div class="exp-content">
           <div class="exp-role">Consultante IA</div>
-          <div class="exp-company">Mission en cabinet de conseil — Paris</div>
+          <div class="exp-company">Missions en cabinet de conseil — Paris</div>
           <p class="exp-desc">
-            Développement de systèmes multi-agents et pipelines RAG avancés en environnement
-            enterprise. Intégration de LangGraph avec Google ADK pour l'orchestration dynamique
-            d'agents. Construction de graphes de connaissances et solutions Graph-based RAG.
-            Création d'APIs robustes avec FastAPI et pipelines de données en streaming avec
-            Apache Spark & Apache Kafka. Leadership technique : mentoring, validation de code,
-            gestion de backlog.
+            Développement de systèmes multi-agents et pipelines RAG avancés en environnement enterprise.
+            <br/>Mise en place de protocoles MCP et A2A pour l'interopérabilité des agents, avec des patterns Human-in-the-Loop.
+            <br/>Construction de graphes de connaissances et solutions Graph-based RAG.
+            <br/>Évaluation des agents et des pipelines RAG avec RAGAS et LangChain AgentEvals.
+            <br/><br/>Création d'APIs robustes avec FastAPI et pipelines de données en streaming avec Apache Spark & Apache Kafka.
+            <br/>Développement et maintenance d'APIs C# pour la gestion de fichiers et solutions backend scalables.
+            <br/><br/>Création d'applications Power Apps, bots de recherche cognitive et intégration d'Azure AI dans Power Virtual Agent.
+            <br/>Conception de workflows Power Automate pour l'automatisation des processus métier.
+            <br/><br/>Leadership technique : mentoring, validation de code, gestion de backlog.
           </p>
           <div class="exp-tags">
             <span class="tag">LangGraph</span>
+            <span class="tag">Pydantic AI</span>
             <span class="tag">Google ADK</span>
+            <span class="tag">MCP</span>
+            <span class="tag">A2A</span>
+            <span class="tag">Human-in-the-Loop</span>
+            <span class="tag">RAGAS</span>
+            <span class="tag">AgentEvals</span>
             <span class="tag">Neo4j</span>
             <span class="tag">Azure AI</span>
             <span class="tag">RAG</span>
             <span class="tag">Kafka</span>
             <span class="tag">FastAPI</span>
-            <span class="tag">Tech Lead</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="exp-item reveal">
-        <div class="exp-period">2023 →<br/>2024</div>
-        <div class="exp-content">
-          <div class="exp-role">Développeuse C# & Consultante Power Platform</div>
-          <div class="exp-company">Mission en entreprise — Tunis</div>
-          <p class="exp-desc">
-            Développement et maintenance d'APIs pour la gestion et manipulation efficace des fichiers.
-            Conception d'algorithmes robustes pour le traitement de données et solutions backend
-            scalables. Création d'applications Power Apps, développement de bots de recherche
-            cognitive et intégration d'Azure AI dans Power Virtual Agent. Conception de workflows
-            Power Automate pour l'automatisation des processus métier.
-          </p>
-          <div class="exp-tags">
             <span class="tag">C#</span>
             <span class="tag">Power Platform</span>
-            <span class="tag">Azure AI</span>
-            <span class="tag">Power Automate</span>
-            <span class="tag">Power Apps</span>
+            <span class="tag">Tech Lead</span>
           </div>
         </div>
       </div>
@@ -760,7 +770,7 @@
           <p class="exp-desc">
             Conception de MetaGraphRag : système hybride combinant knowledge graphs (Neo4j)
             et LLMs pour l'analyse de documents réglementaires ESRS/ESG. Évaluation comparative
-            de méthodes RAG avec RAGAS, BLEU et BERTScore. Stockage vectoriel via Azure Cognitive Search.
+            de méthodes RAG avec RAGAS, BLEU et BERTScore.
           </p>
           <div class="exp-tags">
             <span class="tag">MetaGraphRag</span>
@@ -805,9 +815,9 @@
         des systèmes multi-agents ou du Graph-RAG ? N'hésitez pas à me contacter.
       </p>
       <div class="contact-links">
-        <a href="mailto:mariem.aloui2850@gmail.com" class="contact-link">
+        <a href="mailto:mariem.aloui.f@gmail.com" class="contact-link">
           <span class="contact-link-label">Email</span>
-          mariem.aloui2850@gmail.com
+          mariem.aloui.f@gmail.com
           <span class="contact-link-arrow">→</span>
         </a>
         <a href="https://linkedin.com/in/mariem-aloui" target="_blank" class="contact-link">
